@@ -593,7 +593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 412fdfb035931487090f3c7a604f8059, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ipAdress: 192.168.1.78
+  ipAdress: 192.168.1.75
   port: 1234
   serverMessage: 
 --- !u!4 &1345855065
@@ -771,6 +771,9 @@ MonoBehaviour:
   msgparts:
   - 
   scan: 0
+  wp_x: 0
+  wp_z: 0
+  wp_y: 0
 --- !u!4 &1813736521
 Transform:
   m_ObjectHideFlags: 0

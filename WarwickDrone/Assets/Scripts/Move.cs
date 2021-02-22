@@ -37,7 +37,7 @@ public class Move : MonoBehaviour
 
         quartTarget = Quaternion.Euler(rotTarget);
 
-        //WarwickDrone.transform.rotation = Quaternion.Lerp(start, quartTarget, lerpspeed);
+        WarwickDrone.transform.rotation = Quaternion.Lerp(transform.rotation, quartTarget, lerpspeed);
 
         WarwickDrone.transform.rotation = Quaternion.RotateTowards(transform.rotation, quartTarget, turningRate * Time.deltaTime);
 
