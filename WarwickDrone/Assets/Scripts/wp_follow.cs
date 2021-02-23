@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class wp_follow : MonoBehaviour
 {
-    public TcpManager sitl;
+   /* public TcpManager sitl;
     public Vector3 target = new Vector3(0.0f, 0.0f, 0.0f);
 
 
@@ -15,5 +15,5 @@ public class wp_follow : MonoBehaviour
         target.y = sitl.wp_y;
         target.z = sitl.wp_z;
         transform.LookAt(target);
-    }
+    }*/
 }

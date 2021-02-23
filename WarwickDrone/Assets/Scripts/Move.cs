@@ -15,7 +15,7 @@ public class Move : MonoBehaviour
     //private float timeCount = 0f;
     private float speed = 1f;
     public float lerpspeed;
-    public float turningRate = 60f;
+    public float turningRate = 30f;
   
  
     // Update is called once per frame
@@ -37,7 +37,7 @@ public class Move : MonoBehaviour
 
         quartTarget = Quaternion.Euler(rotTarget);
 
-        WarwickDrone.transform.rotation = Quaternion.Lerp(transform.rotation, quartTarget, lerpspeed);
+        //WarwickDrone.transform.rotation = Quaternion.Lerp(transform.rotation, quartTarget, lerpspeed);
 
         WarwickDrone.transform.rotation = Quaternion.RotateTowards(transform.rotation, quartTarget, turningRate * Time.deltaTime);
 
