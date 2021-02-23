@@ -36,7 +36,7 @@ public class DisplayM : MonoBehaviour
         if (msgparts.Length == 6) // number of things in the message
         {
             // here set the variables you declared, to the relevant position in the string, starting with 0
-            x = float.Parse(msgparts[0]); 
+            x = float.Parse(msgparts[0]);
             z = float.Parse(msgparts[1]);
             y = float.Parse(msgparts[2]);
             pitch = float.Parse(msgparts[3]);
@@ -50,3 +50,4 @@ public class DisplayM : MonoBehaviour
         }
 
     }
+}
