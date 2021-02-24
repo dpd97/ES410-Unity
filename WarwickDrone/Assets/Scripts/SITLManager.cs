@@ -12,7 +12,9 @@ public class SITLManager : MonoBehaviour
     public float z;
     public float roll;
     public float pitch;
+    public int[] yaws = new int[3];
     public float yaw;
+    public float yawAverage;
 
     // Start is called before the first frame update
     void Start()
@@ -34,12 +36,12 @@ public class SITLManager : MonoBehaviour
 
         if (msgparts.Length == 6)
         {
-            x = float.Parse(msgparts[0]);
-            z = float.Parse(msgparts[1]);
-            y = float.Parse(msgparts[2]);
+            z = float.Parse(msgparts[0]); //north
+            x = float.Parse(msgparts[1]); //east 
+            y = float.Parse(msgparts[2]); // up
             pitch = float.Parse(msgparts[3]);
             roll = float.Parse(msgparts[4]);
-            yaw = float.Parse(msgparts[5]);
+            yaw1 = float.Parse(msgparts[5]);
 
         }
         else

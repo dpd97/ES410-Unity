@@ -150,6 +150,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 542c783fa0621410fb6a73175c0f5144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tcp: {fileID: 0}
+  msgparts:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  x: 0
+  y: 0
+  z: 0
+  roll: 0
+  pitch: 0
+  yaw: 0
 --- !u!4 &215164457
 Transform:
   m_ObjectHideFlags: 0
@@ -174,7 +188,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 68efc5a0f790b7043b6013f9d976c867,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -54
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 68efc5a0f790b7043b6013f9d976c867,
         type: 3}
@@ -184,7 +198,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 68efc5a0f790b7043b6013f9d976c867,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.08
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 68efc5a0f790b7043b6013f9d976c867,
         type: 3}
@@ -626,7 +640,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1730056172}
   smoothSpeed: 0.125
-  offset: {x: 0, y: 0.755, z: -2}
+  offset: {x: 0, y: 1, z: -3}
 --- !u!1 &1287140572
 GameObject:
   m_ObjectHideFlags: 0
@@ -656,6 +670,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f3afadd1b51741c8bacb8e2078acbbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ipAdress: 192.168.1.75
+  port: 1244
+  serverMessage: 
 --- !u!4 &1287140574
 Transform:
   m_ObjectHideFlags: 0

@@ -25,9 +25,9 @@ public class Move : MonoBehaviour
         posTarget.x = sitl.x;
         posTarget.y = sitl.y;
         posTarget.z = sitl.z;
-        rotTarget.x = -(sitl.roll * Mathf.Rad2Deg);
-        rotTarget.y = sitl.yaw * Mathf.Rad2Deg;
-        rotTarget.z = -(sitl.pitch * Mathf.Rad2Deg);
+        rotTarget.x = (sitl.roll * Mathf.Rad2Deg);
+        rotTarget.y = sitl.yawAverage * Mathf.Rad2Deg;
+        rotTarget.z = (sitl.pitch * Mathf.Rad2Deg);
         lerpspeed = Time.deltaTime * speed;
 
         if (posTarget != transform.position)

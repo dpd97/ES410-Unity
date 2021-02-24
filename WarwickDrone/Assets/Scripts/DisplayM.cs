@@ -25,6 +25,8 @@ public class DisplayM : MonoBehaviour
     void Update()
     {
         DecodeMessage();
+
+
     }
 
     void DecodeMessage()
@@ -36,11 +38,11 @@ public class DisplayM : MonoBehaviour
         if (msgparts.Length == 6) // number of things in the message
         {
             // here set the variables you declared, to the relevant position in the string, starting with 0
-            x = float.Parse(msgparts[0]);
-            z = float.Parse(msgparts[1]);
+            z = float.Parse(msgparts[0]);
+            x = float.Parse(msgparts[1]);
             y = float.Parse(msgparts[2]);
-            pitch = float.Parse(msgparts[3]);
-            roll = float.Parse(msgparts[4]);
+            pitch = -float.Parse(msgparts[3]);
+            roll = -float.Parse(msgparts[4]);
             yaw = float.Parse(msgparts[5]);
 
         }

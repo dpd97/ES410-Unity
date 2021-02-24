@@ -25,6 +25,7 @@ public class TcpManager : MonoBehaviour
         {
             tcp.SendTcpImage(droneCam);
         }
+
         DecodeMessage();
 
         /*if (Input.GetKeyDown(KeyCode.Space))
@@ -43,18 +44,6 @@ public class TcpManager : MonoBehaviour
         {
             scan = float.Parse(msgparts[0]);
         }
-
-        /*if (msgparts.Length == 3)
-        {
-            theta = float.Parse(msgparts[0]);
-            fi = float.Parse(msgparts[1]);
-            detect = float.Parse(msgparts[2]);
-
-        }
-        else
-        {
-            Debug.Log("message not recieved");
-        } */
 
     }
 }
